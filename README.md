@@ -1,0 +1,2 @@
+# COMP2100_6442_S1_2020_GROUP_PROJECT
+An android survey App
