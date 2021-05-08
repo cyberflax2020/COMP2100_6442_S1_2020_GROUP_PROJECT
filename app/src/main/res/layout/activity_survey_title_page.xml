@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounp_image"
+    tools:context=".Search_result">
+
+    <TextView
+        android:id="@+id/surveyTitleTextView"
+        android:layout_width="344dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="168dp"
+        android:background="@color/colorGray"
+        android:text="TextView"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/engageButton"
+        android:layout_width="269dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bk_btn"
+        android:onClick="engage"
+        android:text="Engage"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surveyTitleTextView" />
+
+    <Button
+        android:id="@+id/checkResultButton"
+        android:layout_width="264dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bk_btn"
+        android:onClick="checkResult"
+        android:text="Check Result"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgrounp_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_questions">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgrounp_image"
+
+        tools:context=".Login">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <LinearLayout
+                    android:id="@+id/ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:background="#1E90FF"
+                    android:orientation="vertical"
+                    android:padding="5dip">
+
+                    <EditText
+                        android:id="@+id/et_content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dip"
+                        android:background="#FFFFFFFF"
+                        android:gravity="left"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="5dip"
+                        app:layout_constraintTop_toBottomOf="@+id/choose_question_type"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip">
+
+                        <ImageButton
+                            android:id="@+id/ibn_add1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Cancel"
+            android:layout_width="203dp"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
+
+            android:background="@drawable/btn_bkk"
+            android:onClick="Onclick_Cancel"
+            android:text="Cancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Save"
+            android:layout_width="203dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/btn_bkk"
+            android:onClick="saveQuestion"
+            android:text="Save" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

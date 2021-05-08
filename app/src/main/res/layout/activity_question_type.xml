@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounp_image"
+    tools:context=".Question_type">
+
+    <TextView
+        android:id="@+id/text_Question_type"
+        android:layout_width="419dp"
+        android:layout_height="47dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="Question Setting"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/allowednum"
+        android:layout_width="292dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type in the maximum number of \n
+options allowed to be chosen"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Question_type" />
+
+    <Button
+        android:id="@+id/toEdit"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/bk_btn"
+        android:onClick="pressToEdit"
+        android:text="Edit"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allowednum" />
+
+    <Button
+        android:id="@+id/btn_Deletequestion"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bk_btn"
+        android:onClick="deleteQuestion"
+        android:text="Delete question"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toEdit"
+        app:layout_constraintVertical_bias="0.109" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

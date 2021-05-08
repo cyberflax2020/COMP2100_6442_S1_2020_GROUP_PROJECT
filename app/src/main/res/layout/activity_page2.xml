@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgrounp_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AutoCompleteTextView
+        android:id="@+id/idActvSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_bg_auto_input"
+        android:button="@null"
+        android:completionThreshold="1"
+        android:dropDownVerticalOffset="2dp"
+        android:hint="Please enter survey ID"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@id/idIvSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/idIvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@mipmap/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/idActvSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/idActvSearch"
+        app:layout_constraintTop_toTopOf="@id/idActvSearch" />
+
+    <Space
+        android:id="@+id/idSStartSurvey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/idBtnSurvey"
+        app:layout_constraintEnd_toStartOf="@id/idBtnSurvey"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/idBtnSurvey" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/idBtnSurvey"
+        android:layout_width="434dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bk_btn"
+
+        android:onClick="onClick_Survey"
+
+        android:text="New Survey"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idActvSearch" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/idBtnEngaged"
+        android:layout_width="453dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bk_btn"
+        android:text="Engaged"
+
+        android:textAllCaps="false"
+
+
+        android:textColor="@android:color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnSurvey" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/idBtnPublish"
+        android:layout_width="441dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bk_btn"
+        android:text="Published"
+
+
+        android:textAllCaps="false"
+
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnEngaged" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Home"
+        android:layout_width="203dp"
+        android:layout_height="34dp"
+        android:background="@drawable/btn_bkk"
+        android:text="Home"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/User_center"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/User_center"
+        android:layout_width="203dp"
+        android:layout_height="34dp"
+        android:background="@drawable/btn_bkk"
+        android:text="User center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Home" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
